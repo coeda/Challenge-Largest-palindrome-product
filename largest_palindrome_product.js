@@ -12,6 +12,29 @@ module.exports = function(digits){
 
   // do your work here
 
+    var testArray = [];
+    var testNumber;
+    for(let i = 0; i < digits; i++){
+      testArray.push(9);
+    }
+    testNumber = parseInt(testArray.join(''));
+
+    for(let j = testNumber; j >= 0; j--){
+      for(let k = testNumber; k >= 0; k--){
+        var palindromeTestNumber;
+        var palindromeCheckReverse;
+        var palindromeArray = [];
+        palindromeTestNumber = j * k;
+        palindromeCheckReverse = palindromeTestNumber.toString().split('').reverse().join('');
+        if(palindromeTestNumber == palindromeCheckReverse){
+          if(palindromeNumber < palindromeTestNumber){
+          palindromeNumber = palindromeTestNumber;
+          factor_0 = k;
+          factor_1 = j;
+          }
+        }
+      }
+    }
 
 
   return {
